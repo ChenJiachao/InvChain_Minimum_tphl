@@ -1,14 +1,3 @@
-# The main part of the project is almost the same as CADhspice3
-# I used the same if statement in the CADhspice3 to rewrite InvChain.sp file and run the InvChain
-# In addition, I create a for loop which has stage: 1,3,5,7,9
-# fan: 2,3,4,5,6, and I save all the result of the tphl of the  different stage/fan combination in an
-# array called value with its stage and fan, in the second and third colum in the array
-# and then, i find the minimum tphl in the variable value, and then, I find the correspongding stage and fan
-
-# Finally, I rewrite the InvChain file by the correspongding stage and fan outside and under the loop again
-
-# The final result of the minimum tphl of the stage and fan: stage =3, fan =5
-
 import subprocess
 import numpy as np
 import shutil
